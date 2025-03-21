@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Moirai+One&family=Song+Myung&display=swap');
+        body{
+            margin: 30px;
+            background-color: rgb(194, 231, 255);
+            transform : rotate(0.04deg); 
+        }
+        a{
+            font-weight:bold;
+            color:hotpink;
+            text-decoration: none;
+
+        }
+        h1{ 
+            font-family: "Song Myung", serif;
+            font-size: 80px;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+        }
+        #yuki ol{
+            text-align: center;
+            background-color: greenyellow;
+            border: double 3px  hotpink;
+            margin: 0;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        #yuki ol div{
+            border-right: double 3px  hotpink;
+            border-left: double 3px  hotpink;
+        }
+        #yuki{
+            font-family:"Gowun Batang", serif;
+            display: grid;
+            grid-template-rows: 50px 1fr;
+            background-color: white;
+        }
+        #momo{
+            margin:50px;
+            margin-top: 0px;
+            padding: 50px;
+            padding-top: 30px;
+        }
+        @media(max-width:600px){
+            #yuki ol div{
+            border-right: none;
+            border-left:none;
+        }
+            #yuki{
+                display: block;
+                grid-template-rows: none;
+            }
+            #yuki ol{
+            display: block;
+            border: none;
+            border-bottom: 1px double hotpink;
+        }
+            h1{
+                font-size: 50px;
+            }
+    }   
